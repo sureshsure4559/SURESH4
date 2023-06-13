@@ -1,0 +1,80 @@
+<html>
+
+<body style="background-color: chartreuse;">
+    <h1><b>STRING MATHOD</b></h1>
+
+    <p><u><b>THE ARRAY Length</b></u></p>
+    <p id="demo"></p>
+    <p><u><b>THE ARRAY Slice</b></u></p>
+    <p id="demo1"></p>
+    <p><u><b>THE STRING Substring</b></u></p>
+    <p id="demo2"></p>
+    <p><u><b>THE STRING TO UpperCase</b></u></p>
+    <p id="demo3"></p>
+    <p><u><b>THE STRING TO toLowerCase</b></u></p>
+    <p id="demo4"></p>
+    <p><u><b>THE STRING TO Replace</b></u></p>
+    <p id="demo5"></p>
+
+    <h2><b>STRING ARRAY MATHOD</b></h2>
+    <P><u><b>THE ARRAY Length</b></u></P>
+    <p id="array"></p>
+    <p><u><b>THE ARRAY Slice</b></u></p>
+    <p id="array1"></p>
+    <P><u><b>THE ARRAY TO UpperCase</b></u></P>
+    <p id="array2"></p>
+    <p><u><B>THE ARRAT Lower Case</B></u></p>
+    <p id="array3"></p>
+    <p><u><b>THE ARRAY TO Replace</b></u></p>
+    <p id="array4"></p>
+    <h2><u>OBJECT METHOD</u></h2>
+    <p id="demo6"></p>
+
+
+
+    <script>
+
+        let text = "computer engineering";
+        document.getElementById("demo").innerHTML = text.length;
+
+        document.getElementById("demo1").innerHTML = text.slice(1 - 9);
+
+        document.getElementById("demo2").innerHTML = text.substr(4);
+        document.getElementById("demo3").innerHTML = text.toUpperCase();
+
+        document.getElementById("demo4").innerHTML = text.toLowerCase();
+
+        let text1 = "GOD IS LOVE";
+        document.getElementById("demo5").innerHTML = text1.replace("LOVE", "SAD");
+    </script>
+
+    <script>
+        let text2 = "i am comeing form gpt college trichy";
+        document.getElementById("array").innerHTML = text2.length;
+
+
+        document.getElementById("array1").innerHTML = text2.slice(1 - 10);
+
+        document.getElementById("array2").innerHTML = text2.toUpperCase();
+
+        document.getElementById("array3").innerHTML = text2.toLowerCase();
+    </script>
+
+    <script>
+        let text3 = "GOOD BOY";
+        document.getElementById("array4").innerHTML = text3.replace("GOOD", "BAD");
+
+    </script>
+    <script>
+        const person = { firstname: "SURESH", lastname: "PADIYAN", age: 18, city: "RAMANATHAPURAM" };
+
+        document.getElementById("demo6").innerHTML = "THE FULL NAME IS " + person.firstname + " " + person.lastname + " THE CITY IS  " + person.city + " THE AGE IS " + person.age;
+
+    </script>
+
+
+
+
+</body>
+
+</html>

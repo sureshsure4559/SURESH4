@@ -1,0 +1,104 @@
+<html>
+
+<body style="background-color:darkorange" ;>
+    <p><b>ARRAY METHOD 10 TYPE</b></p>
+    <p><u>THE HIGHEST NUMBER:</u></p>
+    <p id="demo1"></p>
+    <p><u>THE SUM OF ALL NUM ARRAY:</u></p>
+    <p id="demo2"></p>
+    <p><u>THE USING LENGTH METHOD:</u></p>
+    <p id="demo3"></p>
+    <p><u>THE USING PUSH METHOD:</u></p>
+    <p id="demo4"></p>
+    <p><u>THE USING POP METHOD:</u></p>
+    <p id="demo5"></p>
+    <p><u>THE USING UNSHIFT METHOD:</u></p>
+    <p id="demo6"></p>
+    <p><u>THE USING SHIFT METHOD:</u></p>
+    <p id="demo7"></p>
+    <p><u>THE USING INDEX OF METHOD:</u></p>
+    <p id="demo8"></p>
+    <p><u>THE USING SPLICE METHOD:</u></p>
+    <p id="demo9"></p>
+    <p><u>THE USING JOIN METHOD:</u></p>
+    <p id="demo10"></p>
+    <p><u>THE USING OBJECT METHOD</u></p>
+    <p id="demo11"></p>
+
+    <script>
+        let numbers1 = [10, 25, 36, 43, 32];
+
+        document.getElementById("demo1").innerHTML = Math.max(10, 25, 36, 43, 32);
+    </script>
+    <script>
+        let add = 0;
+        const numbers = [10, 20, 30, 40, 50];
+        numbers.forEach(sure);
+        document.getElementById("demo2").innerHTML = add;
+        function sure(item) {
+            add += item;
+        }
+
+    </script>
+    <script>
+
+        const gpt = ["CSE", "EEE", "MECH", "CIVIL"];
+        let length = gpt.length;
+
+        document.getElementById("demo3").innerHTML = length;
+    </script>
+    <script>
+        const district = ["RAMNATHAPURAM", "MADURAI", "TRICHY"];
+        district.push("KARAIKUDI");
+
+        document.getElementById("demo4").innerHTML = district;
+
+    </script>
+    <script>
+        const sports = ["KABADDI", "VOLLAY BALL", "FOOD BALL"];
+
+        sports.pop();
+        document.getElementById("demo5").innerHTML = sports;
+    </script>
+    <script>
+        const Arts = ["B.A.TAMIL", "B.A.ENGLISH"];
+        Arts.unshift("B.SC COMPUTER", "B.SC CHIMISITRY");
+        document.getElementById("demo6").innerHTML = Arts;
+    </script>
+    <script>
+        const GPT = ["RAMNATHAPURAM", "MADURAI", "TRICHY"];
+        GPT.shift();
+
+        document.getElementById("demo7").innerHTML = GPT;
+    </script>
+    <script>
+        const fruits = ["Banana", "Orange", "Apple", "Mango"];
+        let index = fruits.indexOf("Mango");
+
+        document.getElementById("demo8").innerHTML = index;
+    </script>
+    <script>
+        const vegetable = ["Tomato", "Onion", "Broccoli", "Cauliflower"];
+        vegetable.splice(0, 2, "carrot.", "Potato");
+
+        document.getElementById("demo9").innerHTML = vegetable;
+
+    </script>
+    <script>
+        const media = ["GOOGLE", "YOUTUPE", "INSTAGRAM", "FACE BOOK"];
+        let suresh = media.join();
+
+        document.getElementById("demo10").innerHTML = suresh;
+    </script>
+    <script>
+        const person = { firstname: "SURESH", lastname: "PADIYAN", age: 18, city: "RAMANATHAPURAM" };
+
+        document.getElementById("demo11").innerHTML = "THE FULL NAME IS " + person.firstname + " " + person.lastname + " THE CITY IS  " + person.city + " THE AGE IS " + person.age;
+
+    </script>
+
+
+
+</body>
+
+</html>
